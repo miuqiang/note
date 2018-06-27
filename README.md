@@ -2,11 +2,11 @@
 
 #### 1、移动端1px处理
 ```css\n
-  .scale-1px{
+  .box{
     position: relative;
     border:none;
   }
-  .scale-1px:after{
+  .box:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -19,12 +19,12 @@
     transform-origin: 0 0;
   }
   //四条边
-  .hairlines li{
+  .box{
       position: relative;
       margin-bottom: 20px;
       border:none;
   }
-  .hairlines li:after{
+  .box:after{
       content: '';
       position: absolute;
       top: 0;
