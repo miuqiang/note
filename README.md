@@ -18,4 +18,24 @@
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
   }
-
+  //四条边
+  .hairlines li{
+      position: relative;
+      margin-bottom: 20px;
+      border:none;
+  }
+  .hairlines li:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid #000;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 200%;
+      height: 200%;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: left top;
+      transform-origin: left top;
+  }
