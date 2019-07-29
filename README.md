@@ -77,7 +77,7 @@
   oninput = "value=value.replace(/[^\d]/g,'')"
   
   ```
-#### input只能输入数字
+#### js 常用正则
 ```
 只能输英文:<input type="text" onkeyup="value=value.replace(/[^a-zA-Z]/g,'')">
         只能输入汉字：<input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))">
