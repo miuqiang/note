@@ -79,11 +79,11 @@
   ```
 #### js 常用正则
 ```
-只能输英文:<input type="text" onkeyup="value=value.replace(/[^a-zA-Z]/g,'')">
-        只能输入汉字：<input onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))">
-        只能输入英文、数字、@符号和.<>?\：符号:<input type="text" onkeyup="value=value.replace(/[^a-za-z0-9u4e00-u9fa5.@]/g,'')"><br><br>
-        只能输入英文字母和数字,不能输入中文:<input onkeyup="value=value.replace(/[^\w\/]/ig,'')"><br><br>
-        只能输入数字、字母、下划线:<input ID="txtShopNumber" runat="server" class="input_text" onkeyup="value=value.replace(/[^(\-)\w\.\/]/ig,'')"/>
-        只能输入数字的：<input onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2">
+只能输英文:<input type="text" oninput="value=value.replace(/[^a-zA-Z]/g,'')">
+        只能输入汉字：<input oninput="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))">
+        只能输入英文、数字、@符号和.<>?\：符号:<input type="text" oninput="value=value.replace(/[^a-za-z0-9u4e00-u9fa5.@]/g,'')"><br><br>
+        只能输入英文字母和数字,不能输入中文:<input oninput="value=value.replace(/[^\w\/]/ig,'')"><br><br>
+        只能输入数字、字母、下划线:<input ID="txtShopNumber" runat="server" class="input_text" oninput="value=value.replace(/[^(\-)\w\.\/]/ig,'')"/>
+        只能输入数字的：<input oninput="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2">
 ```
   
