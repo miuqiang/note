@@ -86,4 +86,21 @@
         只能输入数字、字母、下划线:<input ID="txtShopNumber" runat="server" class="input_text" oninput="value=value.replace(/[^(\-)\w\.\/]/ig,'')"/>
         只能输入数字的：<input oninput="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ID="Text2">
 ```
-  
+### js 实现深拷贝
+```
+1、
+function deepClone(arr){
+    var obj=arr.constructor==Array?[]:{};
+　　//第二种方法 var obj=arr instanceof Array?[]:{}
+　　//第三种方法 var obj=Array.isArray(arr)?[]:{}
+　　for(var item in arr){
+        if(typeof arr[item]==="object"){
+            obj[item]=deepClone(arr[item]);
+        }else{
+            obj[item]=arr[item];
+        }
+    }
+    return obj;
+}
+2、var obj = JSON.parse( JSON.stringify(obj) )
+```
