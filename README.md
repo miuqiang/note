@@ -104,3 +104,17 @@ function deepClone(arr){
 }
 2、var obj = JSON.parse( JSON.stringify(obj) )
 ```
+#### 保留小数点（非四舍五入）
+```
+const toFixed = (n, fixed=2) => ~~(Math.pow(10, fixed) * n) / Math.pow(10, fixed);
+// Examples
+toFixed(25.198726354, 1);       // 25.1
+toFixed(25.198726354, 2);       // 25.19
+toFixed(25.198726354, 3);       // 25.198
+```
+#### 反转字符串
+```
+const reverse = str => str.split('').reverse().join('');
+reverse('hello world');     
+// Result: 'dlrow olleh'
+```
