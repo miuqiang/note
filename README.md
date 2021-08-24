@@ -118,7 +118,7 @@ const reverse = str => str.split('').reverse().join('');
 reverse('hello world');     
 // Result: 'dlrow olleh'
 ```
-#### 要转成图片的字符串
+#### 图片转字符串
 ```
 /**
  * @param string val 要转成图片的字符串
